@@ -20,30 +20,29 @@ https://restful-booker.herokuapp.com
 
 ## Project Structure
 
-automation-booking-api/
-│
-├── tests/
-│   ├── test_auth.py
-│   ├── test_create_booking.py
-│   ├── test_get_booking.py
-│   ├── test_update_booking.py
-│   ├── test_delete_booking.py
-│   ├── test_negative_invalid_booking.py
-│   ├── test_negative_invalid_create.py
-│   └── test_api_client.py
-│
-├── utils/
-│   ├── api_client.py
-│   └── test_data.py
-│
-├── reports/
-│   └── test-report.html
-│
-├── conftest.py
-├── pytest.ini
-├── requirements.txt
-├── .gitignore
-└── README.md
+The project is organized as follows:
+
+- **tests/** – Contains all API test cases
+  - `test_auth.py` – Authentication test
+  - `test_create_booking.py` – Create booking test
+  - `test_get_booking.py` – Get booking test
+  - `test_update_booking.py` – Update booking test
+  - `test_delete_booking.py` – Delete booking test
+  - `test_negative_invalid_booking.py` – Invalid booking ID test
+  - `test_negative_invalid_create.py` – Invalid booking data test
+  - `test_api_client.py` – API client GET test
+
+- **utils/** – Contains reusable utility files
+  - `api_client.py` – API request methods
+  - `test_data.py` – Test data
+
+- **reports/** – Contains the generated HTML test report
+
+- `conftest.py` – Pytest fixtures
+- `pytest.ini` – Pytest configuration
+- `requirements.txt` – Python dependencies
+- `.gitignore` – Files excluded from Git
+- `README.md` – Project documentation
 
 ## Test Scenarios
 
