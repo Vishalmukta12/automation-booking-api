@@ -42,7 +42,8 @@ automation-booking-api/
 ├── conftest.py
 ├── pytest.ini
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── README.md
 
 ## Test Scenarios
 
@@ -67,6 +68,31 @@ Open the project folder in VS Code.
 
 ```bash
 python -m venv .venv
+```
+
+### 3. Activate virtual environment
+
+```bash
+.venv\Scripts\activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the tests
+
+```bash
+pytest
+```
+
+### 6. Generate HTML report
+
+```bash
+pytest --html=reports/test-report.html
+```
 
 ## Author
 
