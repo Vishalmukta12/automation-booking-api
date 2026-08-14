@@ -10,7 +10,7 @@ def test_get_nonexistent_booking():
     # STEP 1: Use a booking ID that should not exist
     # -------------------------------------------------
 
-    invalid_booking_id = "999999"
+    invalid_booking_id = "9900"
 
     url = f"{BASE_URL}/booking/{invalid_booking_id}"
 
